@@ -9,7 +9,7 @@ import React from 'react'
 
 const Page = async () => {
   const companions = await getAllCompanions({ limit: 3 })
-  const recentSessionCompanies = await getRecentSessions(10);
+  const recentSessionCompanions = await getRecentSessions(10);
 
   return (
     <main>
@@ -29,7 +29,7 @@ const Page = async () => {
       <section className='home-section'>
         <CompanionsList
           title="Recently completed sessions"
-          companions={recentSessions}
+          companions={recentSessionCompanions}
           classNames="w-2/3 max-lg:w-full"
         />
         <CTA />
