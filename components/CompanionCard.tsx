@@ -1,6 +1,6 @@
 'use client'
 
-import { addBookmark, getBookmarkedCompanions, isCompanionBookmarked, removeBookmark } from "@/lib/actions/actions"
+import { addBookmark, isCompanionBookmarked, removeBookmark } from "@/lib/actions/actions"
 import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
